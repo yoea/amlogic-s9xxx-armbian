@@ -237,6 +237,7 @@ on:
         options:
           - ophub
           - angel
+          - ewing
 
 env:
   TZ: America/New_York
