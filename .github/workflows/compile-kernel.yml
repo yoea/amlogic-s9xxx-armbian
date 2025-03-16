@@ -80,8 +80,6 @@ on:
 
 env:
   TZ: America/New_York
-  KBUILD_BUILD_USER: "ewing"
-  KBUILD_BUILD_HOST: "PearlsHome"
 
 jobs:
   build:
@@ -96,6 +94,8 @@ jobs:
         id: init
         env:
           DEBIAN_FRONTEND: noninteractive
+          KBUILD_BUILD_USER: "ewing"
+          KBUILD_BUILD_HOST: "PearlsHome"
         run: |
           docker rmi $(docker images -q) 2>/dev/null
           [[ -n "${AGENT_TOOLSDIRECTORY}" ]] && sudo rm -rf "${AGENT_TOOLSDIRECTORY}"
