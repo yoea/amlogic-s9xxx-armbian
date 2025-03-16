@@ -80,6 +80,8 @@ on:
 
 env:
   TZ: America/New_York
+  KBUILD_BUILD_USER: "ewing"
+  KBUILD_BUILD_HOST: "PearlsHome"
 
 jobs:
   build:
