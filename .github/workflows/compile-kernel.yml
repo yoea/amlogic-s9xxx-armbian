@@ -21,7 +21,7 @@ on:
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "6.12.y"
+        default: "6.6.y_6.12.y"
         type: choice
         options:
           - 5.4.y
@@ -72,7 +72,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-yoea"
+        default: "-ewing"
         type: choice
         options:
           - -ewing
